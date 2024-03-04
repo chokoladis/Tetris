@@ -1,0 +1,44 @@
+html, 
+body {
+    height: 100%;
+}
+
+#app{
+    background: rgb(225, 225, 225);
+    height: 100%;
+
+
+    main{
+
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        &.menu{
+
+            .list-group{
+                a{
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    text-align: center;
+
+                    &:hover{
+                        color: var(--bs-list-group-active-color);
+                        background-color: var(--bs-list-group-active-bg);
+                        border-color: var(--bs-list-group-active-border-color);
+                        box-shadow: 0px 2px 10px var(--bs-list-group-active-bg);
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+
+        text-align: center;
+    }
+}
