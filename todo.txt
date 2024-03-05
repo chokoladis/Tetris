@@ -1,0 +1,4 @@
+game on vue + model statistics
+settings on js cookie (level, volume sound, color theme)
+statistics on model 
+stats (ip_address, scope)

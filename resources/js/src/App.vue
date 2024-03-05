@@ -1,23 +1,18 @@
 <template>
-    <MainMenu/>
-    <footer>
-        <div class="container">
-            copyright 2024
-        </div>
-    </footer>
+
 </template>
 
 <script>
 import {defineComponent} from 'vue';
-import MainMenu from './components/MainMenu.vue';
+// import Tetris from './components/Tetris.vue';
 
 export default defineComponent({
-    components: {
-        MainMenu
-    },
+    // components: {
+    //     Tetris
+    // },
     setup() {
         return {
-            // username: 'misha'
+            
         }
     }
 });

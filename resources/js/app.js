@@ -1,7 +1,9 @@
 import './bootstrap';
-import { createApp } from 'vue';
-import App from './src/App.vue';
 import '../../node_modules/jquery';
+
+import { createApp } from 'vue';
+
+import Tetris from './src/components/Tetris.vue';
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -9,7 +11,10 @@ import '../../node_modules/jquery';
  * to use in your application's views. An example is included for you.
  */
 
-const app = createApp(App).mount('#app');
+const app = createApp({});
+
+app.component('Tetris', Tetris );
+app.mount('#app');
 
 var menu_item_hover_sound = new Audio('/storage/sounds/звук_1.mp3');
 
