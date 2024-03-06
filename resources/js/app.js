@@ -17,9 +17,28 @@ app.component('Tetris', Tetris );
 app.mount('#app');
 
 var menu_item_hover_sound = new Audio('/storage/sounds/звук_1.mp3');
+var menu_item_click_sound = new Audio('/storage/sounds/click.mp3');
 
 $('main.menu a').on('mouseover', () => {
     menu_item_hover_sound.pause();
     menu_item_hover_sound.currentTime = 0;
     menu_item_hover_sound.play();
+});
+
+$('main.menu a').on('click', function(e) {
+
+    e.preventDefault();
+
+    $('#work_container').addClass('hide');
+
+    let href = $(this).attr('href');
+
+    menu_item_click_sound.pause();
+    menu_item_click_sound.currentTime = 0;
+    menu_item_click_sound.play();
+    
+    
+    setTimeout(function () {
+        window.location.href = href; 
+    }, 500);
 });

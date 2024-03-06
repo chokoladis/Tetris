@@ -39,6 +39,54 @@ footer{
 }
 
 #app{
-    background: rgb(225, 225, 225);
+    background: rgb(234, 234, 234);
+    display: flex;
+    align-items: center;
     height: 100%;
+}
+
+#work_container{
+    transition: .6s;
+    margin-top: unset;
+
+    &.game{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #new_shape{
+        // width: 150px;
+        // height: 150px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        // align-items: center;
+
+        .level{
+            display: flex;
+            
+            > *{
+                width: 30px;
+                height: 30px;
+                background: black;
+                border: 1px solid blue;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+    #frame_game{
+        border-radius: 10px;
+        border: 1px solid silver;
+        width: 400px;
+        height: 500px;
+        background: white;
+    }
+
+    &.hide{
+        margin-top: 150%;
+    }
 }
